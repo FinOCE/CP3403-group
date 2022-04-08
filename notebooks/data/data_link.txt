@@ -1,0 +1,5 @@
+data download link
+
+default data used = https://coast.noaagov/htdata/CMSP/AISDataHandler/2021/AIS_2021_01_01.zip
+
+more data = https://marinecadastre.gov/ais/
