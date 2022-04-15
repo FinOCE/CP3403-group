@@ -9,13 +9,13 @@
 
 ## Business Cases for using AIS data:
 
--Analysing commodity availability
--Informing investment opportunities
--Monitoring illegal activity
--Shipping optimisation
--Emmisions monitoring
--Placement of infrastructure
--Managing vessell traffic 
+- Analysing commodity availability
+- Informing investment opportunities
+- Monitoring illegal activity
+- Shipping optimisation
+- Emmisions monitoring
+- Placement of infrastructure
+- Managing vessell traffic 
 
 
 
