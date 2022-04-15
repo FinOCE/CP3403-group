@@ -7,6 +7,18 @@
 - Daniel Mackenzie
 - Finley Sherwood
 
+## Business Cases for using AIS data:
+
+-Analysing commodity availability
+-Informing investment opportunities
+-Monitoring illegal activity
+-Shipping optimisation
+-Emmisions monitoring
+-Placement of infrastructure
+-Managing vessell traffic 
+
+
+
 ## Guide to committing changes
 
 There may be some situations where issues happen, but I believe this should be the way for us to all work on the same repository.
