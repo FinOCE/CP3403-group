@@ -1,0 +1,80 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 100 -T 0 -C 0.25 -D 0.05 -U 1.0 -M 0.01 -S -1.0 -A -c 1
+Relation:     heart_2020_cleaned2-weka.filters.unsupervised.attribute.Discretize-F-B3-M-1.0-Rfirst-last-precision6
+Instances:    319795
+Attributes:   18
+              HeartDisease
+              BMI
+              Smoking
+              AlcoholDrinking
+              Stroke
+              PhysicalHealth
+              MentalHealth
+              DiffWalking
+              Sex
+              AgeCategory
+              Race
+              Diabetic
+              NoPhysicalActivity
+              GenHealth
+              SleepTime
+              Asthma
+              KidneyDisease
+              SkinCancer
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.01 (3198 instances)
+Minimum metric <confidence>: 0.25
+Number of cycles performed: 20
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 32
+
+Size of set of large itemsets L(2): 131
+
+Size of set of large itemsets L(3): 112
+
+Size of set of large itemsets L(4): 28
+
+Size of set of large itemsets L(5): 2
+
+Best rules found:
+
+  1. Stroke=Yes 12069 ==> HeartDisease=Yes 4389    conf:(0.36)
+  2. Stroke=Yes Race=White 9284 ==> HeartDisease=Yes 3354    conf:(0.36)
+  3. PhysicalHealth='(5.5-inf)' GenHealth=Poor 9768 ==> HeartDisease=Yes 3361    conf:(0.34)
+  4. GenHealth=Poor 11289 ==> HeartDisease=Yes 3850    conf:(0.34)
+  5. DiffWalking=Yes Race=White Diabetic=Yes 9709 ==> HeartDisease=Yes 3310    conf:(0.34)
+  6. PhysicalHealth='(5.5-inf)' Diabetic=Yes 11531 ==> HeartDisease=Yes 3709    conf:(0.32)
+  7. DiffWalking=Yes Diabetic=Yes 13658 ==> HeartDisease=Yes 4378    conf:(0.32)
+  8. Smoking=Yes Sex=Male Diabetic=Yes 11205 ==> HeartDisease=Yes 3517    conf:(0.31)
+  9. Smoking=Yes DiffWalking=Yes Sex=Male 11153 ==> HeartDisease=Yes 3428    conf:(0.31)
+ 10. DiffWalking=Yes Sex=Male Race=White 13148 ==> HeartDisease=Yes 3993    conf:(0.3)
+ 11. KidneyDisease=Yes 11779 ==> HeartDisease=Yes 3455    conf:(0.29)
+ 12. Smoking=Yes Race=White Diabetic=Yes 14915 ==> HeartDisease=Yes 4334    conf:(0.29)
+ 13. Smoking=Yes PhysicalHealth='(5.5-inf)' DiffWalking=Yes 13133 ==> HeartDisease=Yes 3804    conf:(0.29)
+ 14. DiffWalking=Yes Sex=Male 17304 ==> HeartDisease=Yes 4894    conf:(0.28)
+ 15. Sex=Male Race=White Diabetic=Yes 15500 ==> HeartDisease=Yes 4369    conf:(0.28)
+ 16. PhysicalHealth='(5.5-inf)' DiffWalking=Yes NoPhysicalActivity=yes 12792 ==> HeartDisease=Yes 3576    conf:(0.28)
+ 17. PhysicalHealth='(5.5-inf)' DiffWalking=Yes Race=White 16419 ==> HeartDisease=Yes 4550    conf:(0.28)
+ 18. Smoking=Yes DiffWalking=Yes NoPhysicalActivity=yes 13267 ==> HeartDisease=Yes 3636    conf:(0.27)
+ 19. Smoking=Yes Diabetic=Yes 19899 ==> HeartDisease=Yes 5393    conf:(0.27)
+ 20. MentalHealth='(-inf-0.5]' Race=White GenHealth=Fair 12109 ==> HeartDisease=Yes 3263    conf:(0.27)
+ 21. Smoking=Yes DiffWalking=Yes Race=White 19280 ==> HeartDisease=Yes 5116    conf:(0.27)
+ 22. Smoking=Yes MentalHealth='(-inf-0.5]' Diabetic=Yes 12664 ==> HeartDisease=Yes 3358    conf:(0.27)
+ 23. PhysicalHealth='(5.5-inf)' DiffWalking=Yes 21718 ==> HeartDisease=Yes 5755    conf:(0.26)
+ 24. Sex=Male Diabetic=Yes 20496 ==> HeartDisease=Yes 5362    conf:(0.26)
+ 25. Diabetic=Yes NoPhysicalActivity=yes 15425 ==> HeartDisease=Yes 4023    conf:(0.26)
+ 26. Smoking=Yes MentalHealth='(-inf-0.5]' DiffWalking=Yes 12874 ==> HeartDisease=Yes 3354    conf:(0.26)
+ 27. DiffWalking=Yes Race=White NoPhysicalActivity=yes 17152 ==> HeartDisease=Yes 4420    conf:(0.26)
+ 28. Smoking=Yes Race=White GenHealth=Fair 14200 ==> HeartDisease=Yes 3624    conf:(0.26)
+ 29. Smoking=Yes DiffWalking=Yes 24855 ==> HeartDisease=Yes 6341    conf:(0.26)
+ 30. DiffWalking=Yes GenHealth=Fair 14530 ==> HeartDisease=Yes 3679    conf:(0.25)
+ 31. MentalHealth='(-inf-0.5]' Sex=Male Diabetic=Yes 14971 ==> HeartDisease=Yes 3767    conf:(0.25)
+
