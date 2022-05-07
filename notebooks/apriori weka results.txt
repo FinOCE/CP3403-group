@@ -1,0 +1,107 @@
+=== Run information ===
+15:53:02: Started weka.associations.Apriori
+15:53:02: Command: weka.associations.Apriori -N 100 -T 0 -C 0.6 -D 0.05 -U 1.0 -M 0.001 -S -1.0 -A -c 1
+15:54:41: Finished weka.associations.Apriori
+
+Scheme:       weka.associations.Apriori -N 100 -T 0 -C 0.6 -D 0.05 -U 1.0 -M 0.001 -S -1.0 -A -c 1
+Relation:     heart_2020_cleaned2-weka.filters.unsupervised.attribute.Discretize-F-B3-M-1.0-Rfirst-last-precision6
+Instances:    319795
+Attributes:   18
+              HeartDisease
+              BMI
+              Smoking
+              AlcoholDrinking
+              Stroke
+              PhysicalHealth
+              MentalHealth
+              DiffWalking
+              Sex
+              AgeCategory
+              Race
+              Diabetic
+              NoPhysicalActivity
+              GenHealth
+              SleepTime
+              Asthma
+              KidneyDisease
+              SkinCancer
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0 (320 instances)
+Minimum metric <confidence>: 0.6
+Number of cycles performed: 20
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 43
+
+Size of set of large itemsets L(2): 597
+
+Size of set of large itemsets L(3): 3144
+
+Size of set of large itemsets L(4): 6472
+
+Size of set of large itemsets L(5): 5567
+
+Size of set of large itemsets L(6): 2015
+
+Size of set of large itemsets L(7): 258
+
+Size of set of large itemsets L(8): 2
+
+Best rules found:
+
+  1. Stroke=Yes PhysicalHealth='(5.5-inf)' Diabetic=Yes NoPhysicalActivity=yes GenHealth=Poor 504 ==> HeartDisease=Yes 336    conf:(0.67)
+  2. Smoking=Yes Stroke=Yes PhysicalHealth='(5.5-inf)' Diabetic=Yes GenHealth=Poor 488 ==> HeartDisease=Yes 322    conf:(0.66)
+  3. Stroke=Yes DiffWalking=Yes Sex=Male Race=White GenHealth=Poor 496 ==> HeartDisease=Yes 326    conf:(0.66)
+  4. Stroke=Yes Diabetic=Yes NoPhysicalActivity=yes GenHealth=Poor 552 ==> HeartDisease=Yes 362    conf:(0.66)
+  5. Smoking=Yes Stroke=Yes Diabetic=Yes GenHealth=Poor 551 ==> HeartDisease=Yes 361    conf:(0.66)
+  6. Stroke=Yes Sex=Male NoPhysicalActivity=yes GenHealth=Poor 510 ==> HeartDisease=Yes 333    conf:(0.65)
+  7. Smoking=Yes Stroke=Yes PhysicalHealth='(5.5-inf)' Sex=Male GenHealth=Poor 558 ==> HeartDisease=Yes 362    conf:(0.65)
+  8. Smoking=Yes Stroke=Yes PhysicalHealth='(5.5-inf)' Sex=Male Diabetic=Yes 538 ==> HeartDisease=Yes 349    conf:(0.65)
+  9. BMI='(29.835-inf)' Stroke=Yes PhysicalHealth='(5.5-inf)' NoPhysicalActivity=yes GenHealth=Poor 506 ==> HeartDisease=Yes 328    conf:(0.65)
+ 10. Smoking=Yes Stroke=Yes Sex=Male GenHealth=Poor 631 ==> HeartDisease=Yes 405    conf:(0.64)
+ 11. Stroke=Yes Race=White Diabetic=Yes GenHealth=Poor 610 ==> HeartDisease=Yes 391    conf:(0.64)
+ 12. Stroke=Yes PhysicalHealth='(5.5-inf)' DiffWalking=Yes Sex=Male GenHealth=Poor 609 ==> HeartDisease=Yes 390    conf:(0.64)
+ 13. Stroke=Yes PhysicalHealth='(5.5-inf)' Sex=Male Race=White GenHealth=Poor 586 ==> HeartDisease=Yes 375    conf:(0.64)
+ 14. Stroke=Yes PhysicalHealth='(5.5-inf)' Race=White Diabetic=Yes GenHealth=Poor 546 ==> HeartDisease=Yes 349    conf:(0.64)
+ 15. Stroke=Yes Sex=Male Race=White GenHealth=Poor 656 ==> HeartDisease=Yes 419    conf:(0.64)
+ 16. Stroke=Yes DiffWalking=Yes Sex=Male GenHealth=Poor 679 ==> HeartDisease=Yes 433    conf:(0.64)
+ 17. Stroke=Yes PhysicalHealth='(5.5-inf)' Sex=Male Race=White Diabetic=Yes 583 ==> HeartDisease=Yes 371    conf:(0.64)
+ 18. Stroke=Yes PhysicalHealth='(5.5-inf)' Sex=Male GenHealth=Poor 780 ==> HeartDisease=Yes 496    conf:(0.64)
+ 19. BMI='(29.835-inf)' Stroke=Yes NoPhysicalActivity=yes GenHealth=Poor 558 ==> HeartDisease=Yes 354    conf:(0.63)
+ 20. Stroke=Yes PhysicalHealth='(5.5-inf)' Diabetic=Yes GenHealth=Poor 754 ==> HeartDisease=Yes 477    conf:(0.63)
+ 21. Stroke=Yes DiffWalking=Yes Diabetic=Yes GenHealth=Poor 691 ==> HeartDisease=Yes 437    conf:(0.63)
+ 22. Stroke=Yes Sex=Male GenHealth=Poor 887 ==> HeartDisease=Yes 560    conf:(0.63)
+ 23. Stroke=Yes PhysicalHealth='(5.5-inf)' DiffWalking=Yes Diabetic=Yes GenHealth=Poor 632 ==> HeartDisease=Yes 399    conf:(0.63)
+ 24. Stroke=Yes PhysicalHealth='(5.5-inf)' DiffWalking=Yes Sex=Male Diabetic=Yes 574 ==> HeartDisease=Yes 362    conf:(0.63)
+ 25. Stroke=Yes DiffWalking=Yes Diabetic=Yes KidneyDisease=Yes 508 ==> HeartDisease=Yes 320    conf:(0.63)
+ 26. BMI='(29.835-inf)' Stroke=Yes DiffWalking=Yes NoPhysicalActivity=yes GenHealth=Poor 508 ==> HeartDisease=Yes 320    conf:(0.63)
+ 27. Stroke=Yes DiffWalking=Yes Sex=Male Race=White Diabetic=Yes 670 ==> HeartDisease=Yes 422    conf:(0.63)
+ 28. Stroke=Yes Diabetic=Yes GenHealth=Poor 851 ==> HeartDisease=Yes 535    conf:(0.63)
+ 29. BMI='(29.835-inf)' Stroke=Yes DiffWalking=Yes Sex=Male Diabetic=Yes 533 ==> HeartDisease=Yes 334    conf:(0.63)
+ 30. Smoking=Yes Stroke=Yes PhysicalHealth='(5.5-inf)' DiffWalking=Yes Sex=Male Race=White 653 ==> HeartDisease=Yes 408    conf:(0.62)
+ 31. BMI='(29.835-inf)' Smoking=Yes Stroke=Yes GenHealth=Poor 527 ==> HeartDisease=Yes 329    conf:(0.62)
+ 32. Stroke=Yes DiffWalking=Yes NoPhysicalActivity=yes KidneyDisease=Yes 571 ==> HeartDisease=Yes 356    conf:(0.62)
+ 33. Stroke=Yes PhysicalHealth='(5.5-inf)' Sex=Male Diabetic=Yes 807 ==> HeartDisease=Yes 503    conf:(0.62)
+ 34. Smoking=Yes Stroke=Yes DiffWalking=Yes Sex=Male Diabetic=Yes 642 ==> HeartDisease=Yes 400    conf:(0.62)
+ 35. Smoking=Yes Stroke=Yes PhysicalHealth='(5.5-inf)' Diabetic=Yes NoPhysicalActivity=yes 604 ==> HeartDisease=Yes 376    conf:(0.62)
+ 36. Stroke=Yes PhysicalHealth='(5.5-inf)' DiffWalking=Yes KidneyDisease=Yes 631 ==> HeartDisease=Yes 391    conf:(0.62)
+ 37. BMI='(29.835-inf)' Stroke=Yes PhysicalHealth='(5.5-inf)' DiffWalking=Yes GenHealth=Poor 642 ==> HeartDisease=Yes 395    conf:(0.62)
+ 38. BMI='(29.835-inf)' Smoking=Yes Stroke=Yes PhysicalHealth='(5.5-inf)' Diabetic=Yes 552 ==> HeartDisease=Yes 338    conf:(0.61)
+ 39. Smoking=Yes Stroke=Yes DiffWalking=Yes KidneyDisease=Yes 569 ==> HeartDisease=Yes 347    conf:(0.61)
+ 40. BMI='(29.835-inf)' Stroke=Yes PhysicalHealth='(5.5-inf)' GenHealth=Poor 738 ==> HeartDisease=Yes 450    conf:(0.61)
+ 41. BMI='(29.835-inf)' Stroke=Yes PhysicalHealth='(5.5-inf)' Race=White GenHealth=Poor 557 ==> HeartDisease=Yes 339    conf:(0.61)
+ 42. BMI='(29.835-inf)' Stroke=Yes DiffWalking=Yes Race=White GenHealth=Poor 529 ==> HeartDisease=Yes 321    conf:(0.61)
+ 43. Stroke=Yes DiffWalking=Yes Sex=Male Diabetic=Yes 949 ==> HeartDisease=Yes 575    conf:(0.61)
+ 44. Smoking=Yes Stroke=Yes PhysicalHealth='(5.5-inf)' Race=White Diabetic=Yes 752 ==> HeartDisease=Yes 455    conf:(0.61)
+ 45. BMI='(29.835-inf)' Stroke=Yes DiffWalking=Yes GenHealth=Poor 713 ==> HeartDisease=Yes 431    conf:(0.6)
+ 46. BMI='(29.835-inf)' Stroke=Yes PhysicalHealth='(5.5-inf)' DiffWalking=Yes Sex=Male 561 ==> HeartDisease=Yes 339    conf:(0.6)
+ 47. Smoking=Yes Stroke=Yes PhysicalHealth='(5.5-inf)' DiffWalking=Yes Race=White Diabetic=Yes 582 ==> HeartDisease=Yes 351    conf:(0.6)
+ 48. Smoking=Yes Stroke=Yes PhysicalHealth='(5.5-inf)' Sex=Male NoPhysicalActivity=yes 668 ==> HeartDisease=Yes 402    conf:(0.6)
+ 49. Smoking=Yes Stroke=Yes PhysicalHealth='(5.5-inf)' DiffWalking=Yes NoPhysicalActivity=yes GenHealth=Poor 650 ==> HeartDisease=Yes 390    conf:(0.6)
+

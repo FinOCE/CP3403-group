@@ -1,0 +1,113 @@
+=== Run information ===
+16:03:28: Started weka.associations.FPGrowth
+16:03:28: Command: weka.associations.FPGrowth -P 2 -I -1 -N 100 -T 0 -C 0.95 -D 0.05 -U 1.0 -M 0.001 -rules HeartDisease=Yes_binarized
+16:03:38: Finished weka.associations.FPGrowth
+
+Scheme:       weka.associations.FPGrowth -P 2 -I -1 -N 100 -T 0 -C 0.95 -D 0.05 -U 1.0 -M 0.001 -rules HeartDisease=Yes_binarized
+Relation:     heart_2020_cleaned3-weka.filters.unsupervised.attribute.Discretize-F-B3-M-1.0-Rfirst-last-precision6-weka.filters.unsupervised.attribute.NominalToBinary-Rfirst-last-weka.filters.unsupervised.attribute.NumericToBinary-Rfirst-last
+Instances:    319795
+Attributes:   50
+              HeartDisease=Yes_binarized
+              BMI='(-inf-25.085]'_binarized
+              BMI='(25.085-29.835]'_binarized
+              BMI='(29.835-inf)'_binarized
+              Smoking=No_binarized
+              AlcoholDrinking=Yes_binarized
+              Stroke=Yes_binarized
+              PhysicalHealth='(-inf-0.5]'_binarized
+              PhysicalHealth='(0.5-5.5]'_binarized
+              PhysicalHealth='(5.5-inf)'_binarized
+              MentalHealth='(-inf-0.5]'_binarized
+              MentalHealth='(0.5-6.5]'_binarized
+              MentalHealth='(6.5-inf)'_binarized
+              DiffWalking=Yes_binarized
+              Sex=Male_binarized
+              AgeCategory=55-59_binarized
+              AgeCategory=80 or older_binarized
+              AgeCategory=65-69_binarized
+              AgeCategory=75-79_binarized
+              AgeCategory=40-44_binarized
+              AgeCategory=70-74_binarized
+              AgeCategory=60-64_binarized
+              AgeCategory=50-54_binarized
+              AgeCategory=45-49_binarized
+              AgeCategory=18-24_binarized
+              AgeCategory=35-39_binarized
+              AgeCategory=30-34_binarized
+              AgeCategory=25-29_binarized
+              Race=White_binarized
+              Race=Black_binarized
+              Race=Asian_binarized
+              Race=American Indian/Alaskan Native_binarized
+              Race=Other_binarized
+              Race=Hispanic_binarized
+              Diabetic=Yes_binarized
+              Diabetic=No_binarized
+              Diabetic=?, borderline diabetes_binarized
+              Diabetic=Yes (during pregnancy)_binarized
+              NoPhysicalActivity=yes_binarized
+              GenHealth=Very good_binarized
+              GenHealth=Fair_binarized
+              GenHealth=Good_binarized
+              GenHealth=Poor_binarized
+              GenHealth=Excellent_binarized
+              SleepTime='(-inf-6.5]'_binarized
+              SleepTime='(6.5-7.5]'_binarized
+              SleepTime='(7.5-inf)'_binarized
+              Asthma=No_binarized
+              KidneyDisease=Yes_binarized
+              SkinCancer=No_binarized
+=== Associator model (full training set) ===
+
+FPGrowth found 47 rules (displaying top 47)
+
+Showing only rules that contain: HeartDisease=Yes_binarized
+
+ 1. [Race=White_binarized=1, BMI='(29.835-inf)'_binarized=1, SleepTime='(-inf-6.5]'_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 363 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 353   <conf:(0.97)> lift:(6.6) lev:(0) conv:(28.13) 
+ 2. [Race=White_binarized=1, SleepTime='(-inf-6.5]'_binarized=1, NoPhysicalActivity=yes_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, DiffWalking=Yes_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 425 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 413   <conf:(0.97)> lift:(6.59) lev:(0) conv:(27.87) 
+ 3. [Race=White_binarized=1, SleepTime='(-inf-6.5]'_binarized=1, NoPhysicalActivity=yes_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 485 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 471   <conf:(0.97)> lift:(6.59) lev:(0) conv:(27.57) 
+ 4. [BMI='(29.835-inf)'_binarized=1, SleepTime='(-inf-6.5]'_binarized=1, NoPhysicalActivity=yes_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 367 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 356   <conf:(0.97)> lift:(6.58) lev:(0) conv:(26.07) 
+ 5. [Race=White_binarized=1, BMI='(29.835-inf)'_binarized=1, NoPhysicalActivity=yes_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, DiffWalking=Yes_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 417 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 404   <conf:(0.97)> lift:(6.57) lev:(0) conv:(25.39) 
+ 6. [SleepTime='(7.5-inf)'_binarized=1, NoPhysicalActivity=yes_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, DiffWalking=Yes_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 337 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 326   <conf:(0.97)> lift:(6.56) lev:(0) conv:(23.94) 
+ 7. [Race=White_binarized=1, SleepTime='(7.5-inf)'_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, DiffWalking=Yes_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 367 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 355   <conf:(0.97)> lift:(6.56) lev:(0) conv:(24.07) 
+ 8. [Sex=Male_binarized=1, BMI='(29.835-inf)'_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, DiffWalking=Yes_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 333 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 322   <conf:(0.97)> lift:(6.56) lev:(0) conv:(23.66) 
+ 9. [Race=White_binarized=1, NoPhysicalActivity=yes_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, DiffWalking=Yes_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 744 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 719   <conf:(0.97)> lift:(6.56) lev:(0) conv:(24.4) 
+10. [Race=White_binarized=1, BMI='(29.835-inf)'_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, DiffWalking=Yes_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 555 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 535   <conf:(0.96)> lift:(6.54) lev:(0) conv:(22.53) 
+11. [BMI='(29.835-inf)'_binarized=1, SleepTime='(-inf-6.5]'_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, DiffWalking=Yes_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 444 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 428   <conf:(0.96)> lift:(6.54) lev:(0) conv:(22.27) 
+12. [Race=White_binarized=1, BMI='(29.835-inf)'_binarized=1, NoPhysicalActivity=yes_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 469 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 452   <conf:(0.96)> lift:(6.54) lev:(0) conv:(22.21) 
+13. [Race=White_binarized=1, NoPhysicalActivity=yes_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 863 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 829   <conf:(0.96)> lift:(6.52) lev:(0) conv:(21.02) 
+14. [Race=White_binarized=1, NoPhysicalActivity=yes_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, DiffWalking=Yes_binarized=1, Diabetic=Yes_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 355 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 341   <conf:(0.96)> lift:(6.52) lev:(0) conv:(20.18) 
+15. [BMI='(29.835-inf)'_binarized=1, NoPhysicalActivity=yes_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, DiffWalking=Yes_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 556 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 534   <conf:(0.96)> lift:(6.51) lev:(0) conv:(20.61) 
+16. [Sex=Male_binarized=1, BMI='(29.835-inf)'_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 401 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 385   <conf:(0.96)> lift:(6.51) lev:(0) conv:(20.11) 
+17. [SleepTime='(-inf-6.5]'_binarized=1, NoPhysicalActivity=yes_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, DiffWalking=Yes_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 576 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 553   <conf:(0.96)> lift:(6.51) lev:(0) conv:(20.46) 
+18. [SleepTime='(7.5-inf)'_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, DiffWalking=Yes_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 469 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 450   <conf:(0.96)> lift:(6.51) lev:(0) conv:(19.99) 
+19. [Race=White_binarized=1, BMI='(29.835-inf)'_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 639 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 613   <conf:(0.96)> lift:(6.51) lev:(0) conv:(20.18) 
+20. [Race=White_binarized=1, SleepTime='(7.5-inf)'_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 462 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 443   <conf:(0.96)> lift:(6.5) lev:(0) conv:(19.69) 
+21. [BMI='(29.835-inf)'_binarized=1, SleepTime='(-inf-6.5]'_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 507 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 486   <conf:(0.96)> lift:(6.5) lev:(0) conv:(19.65) 
+22. [MentalHealth='(6.5-inf)'_binarized=1, DiffWalking=Yes_binarized=1, HeartDisease=Yes_binarized=1, KidneyDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 385 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 369   <conf:(0.96)> lift:(6.5) lev:(0) conv:(19.31) 
+23. [Race=White_binarized=1, BMI='(29.835-inf)'_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, Diabetic=Yes_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 359 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 344   <conf:(0.96)> lift:(6.5) lev:(0) conv:(19.13) 
+24. [Race=White_binarized=1, NoPhysicalActivity=yes_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, Diabetic=Yes_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 403 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 386   <conf:(0.96)> lift:(6.5) lev:(0) conv:(19.09) 
+25. [SleepTime='(-inf-6.5]'_binarized=1, NoPhysicalActivity=yes_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 661 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 633   <conf:(0.96)> lift:(6.5) lev:(0) conv:(19.43) 
+26. [SleepTime='(7.5-inf)'_binarized=1, NoPhysicalActivity=yes_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 401 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 384   <conf:(0.96)> lift:(6.5) lev:(0) conv:(18.99) 
+27. [NoPhysicalActivity=yes_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, DiffWalking=Yes_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 984 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 942   <conf:(0.96)> lift:(6.49) lev:(0) conv:(19.51) 
+28. [BMI='(29.835-inf)'_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, DiffWalking=Yes_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 748 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 716   <conf:(0.96)> lift:(6.49) lev:(0) conv:(19.33) 
+29. [Race=White_binarized=1, SleepTime='(-inf-6.5]'_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, DiffWalking=Yes_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 607 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 581   <conf:(0.96)> lift:(6.49) lev:(0) conv:(19.17) 
+30. [Sex=Male_binarized=1, NoPhysicalActivity=yes_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, DiffWalking=Yes_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 418 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 400   <conf:(0.96)> lift:(6.49) lev:(0) conv:(18.76) 
+31. [BMI='(29.835-inf)'_binarized=1, NoPhysicalActivity=yes_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 626 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 599   <conf:(0.96)> lift:(6.49) lev:(0) conv:(19.06) 
+32. [Race=White_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, DiffWalking=Yes_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 1060 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 1013   <conf:(0.96)> lift:(6.48) lev:(0) conv:(18.83) 
+33. [Sex=Male_binarized=1, SleepTime='(7.5-inf)'_binarized=1, GenHealth=Very good_binarized=1, AgeCategory=70-74_binarized=1, HeartDisease=Yes_binarized=1]: 337 ==> [Race=White_binarized=1]: 322   <conf:(0.96)> lift:(1.25) lev:(0) conv:(4.91) 
+34. [NoPhysicalActivity=yes_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, DiffWalking=Yes_binarized=1, Diabetic=Yes_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 491 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 469   <conf:(0.96)> lift:(6.48) lev:(0) conv:(18.2) 
+35. [BMI='(29.835-inf)'_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, DiffWalking=Yes_binarized=1, Diabetic=Yes_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 440 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 420   <conf:(0.95)> lift:(6.47) lev:(0) conv:(17.86) 
+36. [Race=White_binarized=1, SleepTime='(-inf-6.5]'_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 720 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 687   <conf:(0.95)> lift:(6.47) lev:(0) conv:(18.05) 
+37. [Sex=Male_binarized=1, GenHealth=Very good_binarized=1, HeartDisease=Yes_binarized=1, AgeCategory=75-79_binarized=1]: 563 ==> [Race=White_binarized=1]: 537   <conf:(0.95)> lift:(1.24) lev:(0) conv:(4.86) 
+38. [Sex=Male_binarized=1, NoPhysicalActivity=yes_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 498 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 475   <conf:(0.95)> lift:(6.47) lev:(0) conv:(17.69) 
+39. [BMI='(29.835-inf)'_binarized=1, NoPhysicalActivity=yes_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, Diabetic=Yes_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 365 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 348   <conf:(0.95)> lift:(6.47) lev:(0) conv:(17.29) 
+40. [Sex=Male_binarized=1, SleepTime='(7.5-inf)'_binarized=1, GenHealth=Very good_binarized=1, HeartDisease=Yes_binarized=1, AgeCategory=80 or older_binarized=1]: 364 ==> [Race=White_binarized=1]: 347   <conf:(0.95)> lift:(1.24) lev:(0) conv:(4.72) 
+41. [Race=White_binarized=1, Sex=Male_binarized=1, NoPhysicalActivity=yes_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 373 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 355   <conf:(0.95)> lift:(6.46) lev:(0) conv:(16.74) 
+42. [SleepTime='(-inf-6.5]'_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, DiffWalking=Yes_binarized=1, Diabetic=Yes_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 392 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 373   <conf:(0.95)> lift:(6.45) lev:(0) conv:(16.71) 
+43. [NoPhysicalActivity=yes_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 1152 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 1095   <conf:(0.95)> lift:(6.45) lev:(0) conv:(16.93) 
+44. [BMI='(29.835-inf)'_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 869 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 826   <conf:(0.95)> lift:(6.45) lev:(0) conv:(16.84) 
+45. [NoPhysicalActivity=yes_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, Diabetic=Yes_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 562 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 534   <conf:(0.95)> lift:(6.45) lev:(0) conv:(16.52) 
+46. [PhysicalHealth='(-inf-0.5]'_binarized=1, SleepTime='(7.5-inf)'_binarized=1, GenHealth=Very good_binarized=1, HeartDisease=Yes_binarized=1, AgeCategory=80 or older_binarized=1]: 501 ==> [Race=White_binarized=1]: 476   <conf:(0.95)> lift:(1.24) lev:(0) conv:(4.49) 
+47. [BMI='(29.835-inf)'_binarized=1, MentalHealth='(6.5-inf)'_binarized=1, Diabetic=Yes_binarized=1, HeartDisease=Yes_binarized=1, GenHealth=Poor_binarized=1]: 501 ==> [PhysicalHealth='(5.5-inf)'_binarized=1]: 476   <conf:(0.95)> lift:(6.44) lev:(0) conv:(16.43) 
+
