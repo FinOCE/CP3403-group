@@ -1,0 +1,73 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.OneR -B 6
+Relation:     final-weka.filters.unsupervised.attribute.Discretize-F-B3-M-1.0-Rfirst-last-precision6
+Instances:    52261
+Attributes:   18
+              ﻿HeartDisease
+              BMI
+              Smoking
+              AlcoholDrinking
+              Stroke
+              PhysicalHealth
+              MentalHealth
+              DiffWalking
+              Sex
+              AgeCategory
+              Race
+              Diabetic
+              PhysicalActivity
+              GenHealth
+              SleepTime
+              Asthma
+              KidneyDisease
+              SkinCancer
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AgeCategory:
+	75-79	-> Yes
+	60-64	-> Yes
+	80 or older	-> Yes
+	70-74	-> Yes
+	55-59	-> No
+	65-69	-> Yes
+	50-54	-> No
+	45-49	-> No
+	35-39	-> No
+	40-44	-> No
+	25-29	-> No
+	30-34	-> No
+	18-24	-> No
+(33819/49776 instances correct)
+
+
+Time taken to build model: 0.08 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       33819               67.9424 %
+Incorrectly Classified Instances     15957               32.0576 %
+Kappa statistic                          0.3588
+Mean absolute error                      0.3206
+Root mean squared error                  0.5662
+Relative absolute error                 64.1152 %
+Root relative squared error            113.2389 %
+Total Number of Instances            49776     
+Ignored Class Unknown Instances               2485     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.798    0.439    0.645      0.798    0.713      0.369    0.654     0.572     Yes
+                 0.561    0.202    0.735      0.561    0.636      0.369    0.689     0.621     No
+Weighted Avg.    0.679    0.321    0.690      0.679    0.675      0.369    0.671     0.597     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 19864  5024 |     a = Yes
+ 10933 13955 |     b = No
+
